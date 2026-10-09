@@ -1,0 +1,7 @@
+1.two_kinghts
+
+take 3x2 grid there is only 2 possibilites to attack
+take 2x3  grid there is only 2 possibilites to attack
+
+so total nc2 - this attacking possibilites done!!
+I didnt get this Idea in first attempt
