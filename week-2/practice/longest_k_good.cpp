@@ -1,50 +1,54 @@
 #include<iostream>
 #include<vector>
-#include<unordered_set>
+
+const int MAXA = 1000005;
 
 using namespace std;
 
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    long long int n,k;
+     int n,k;
     cin>>n>>k;
-    vector<long long int>v(n+1,0);
-    for(long long int i=1;i<n+1;i++){
+    vector< int>v(n,0);
+    for(int i=0;i<n;i++){
         cin>>v[i];
     }
-    unordered_set<int>st;
-    long long int left =1;
-    long long int right=1;
-    long long int max_left=1;
-    long long int max_right=1;
-    while(right<=n){
-        if(st.empty()){
-            st.insert(v[right]);
-            right++;
-        }
-        else if(st.size()<k){
-            st.insert(v[right]);
-            right++;
-        }
-        else if(st.size()==k){
-            if(!st.contains(v[right])){
-                st.clear();
-                st.insert(v[right]);
-                if(right-left > max_right-max_left){
-                    max_left = left;
-                    max_right = right-1;
-                }
-                left=right;
-                continue;
-            }
-            else right++;
-        }
+   
+    vector< int>freq(MAXA,0);
+    int start = 1;
+    int end = 1;
+    int max_len = 0;
+    int l=1,r=1;
+    int distinct=0;
+    for(end=1;end<=n;end++){
 
-        if(right-left > max_right-max_left){
-                    max_left = left;
-                    max_right = right-1;
-                }
+        if(freq[v[end-1]]==0){
+            distinct++;
+        }
+        freq[v[end-1]]++;
+
+         while(distinct>k){
+            freq[v[start-1]]--;
+
+            if(freq[v[start-1]]==0){
+                    distinct--;
+            }
+
+            start++;                
+                
+            }
+        
+
+        if(max_len<end-start+1){
+            l = start;
+            r = end;
+            max_len = end-start+1;
+        }
+        
     }
-    cout<<max_left<<" "<<max_right<<'\n';
+    cout<<l<<" "<<r<<'\n';
+
+    
 }
+//* https://codeforces.com/contest/616/problem/D
