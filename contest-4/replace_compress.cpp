@@ -29,4 +29,10 @@ int main() {
         cout << ans << '\n';
     }
     return 0;
+    
 }
+
+/*the first and last character cant be changed if we assume the final legth of string to be "x" for which 
+ we can find only one sting because the alternating characters are fixed (it is not garunteed to always find such sting though)
+ so the idea is to calculate number of such lenghts possible */
+ //* https://codeforces.com/contest/2276/problem/B

@@ -25,7 +25,7 @@ int main() {
             mod[v[i]].push_back(i);
         }
         for(int i=0;i<k;i++){
-            // i rep mod values of prefix sums 
+            //* i represent mod values of prefix sums 
             if(mod[i].empty())continue;
             int m = mod[i].size();
             int r = 0;
@@ -44,3 +44,15 @@ int main() {
 
     }
 }
+
+// Two-pointer on grouped indices: mod[i] contains sorted original indices for remainder i.
+
+// r = max(r, j + 1) guarantees r stays ahead of j (r > j) and avoids resetting to keep linear time.
+
+// Monotonicity: As j increases, the target threshold also increases, so r only ever moves forward.
+
+// Threshold search: The while loop scans until finding the first index where mod[i][r] > mod[i][j] + k.
+
+// Batch counting: All elements from r up to m - 1 are guaranteed valid, adding (m - r) pairs in O(1).
+
+//! https://codeforces.com/contest/2276/problem/C
