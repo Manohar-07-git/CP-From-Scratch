@@ -1,6 +1,6 @@
 === Level 1: Foundations & Bitwise Mechanics (CF 800 - 1200 / CSES Introductory) ===
-CSES 1617 - Bit Strings
-CSES 2205 - Gray Code
+CSES 1617 - Bit Strings done
+CSES 2205 - Gray Code done
 CSES 1623 - Apple Division
 CF 579A - Raising Bacteria
 CF 1097B - Petr and a Combination Lock
