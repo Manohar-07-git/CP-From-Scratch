@@ -1,0 +1,4 @@
+CompileFlags:
+  Compiler: /usr/bin/g++
+  Remove: [-std=*]
+  Add: [-std=c++23]
