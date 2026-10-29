@@ -1,0 +1,44 @@
+=== Level 1: Foundations & Bitwise Mechanics (CF 800 - 1200 / CSES Introductory) ===
+CSES 1617 - Bit Strings done
+CSES 2205 - Gray Code done
+CSES 1623 - Apple Division
+CF 579A - Raising Bacteria
+CF 1097B - Petr and a Combination Lock
+CF 1514B - AND 0, Sum Big
+CF 1632B - Roof Construction
+
+=== Level 2: XOR Properties, Subarrays & Independent Bit Sums (CF 1200 - 1600) ===
+CSES 1650 - Range Xor Queries
+CSES 1146 - Counting Bits
+CF 1325D - Ehab the Xorcist
+CF 276D - Little Girl and Maximum XOR
+CF 1879D - Sum of XOR Functions
+CF 1775B - Gardener and the Array
+CF 1368D - AND, OR and square sum
+
+=== Level 3: Bitmask DP, Submask Iteration & Binary Tries (CF 1600 - 1900) ===
+CSES 1690 - Hamiltonian Flights
+CSES 1684 - Elevator Rides
+CSES 2181 - Counting Tilings
+CSES 1655 - Maximum Xor Subarray
+CF 706D - Vasiliy's Multiset
+CF 817E - Choosing The Commander
+CF 1209E1 - Rotate Columns (easy version)
+CF 1209E2 - Rotate Columns (hard version)
+
+=== Level 4: SOS DP & Bit-Parallel Optimizations (CF 1900 - 2200) ===
+CSES 2140 - Beautiful Subgrids
+CSES 2143 - Reachability Queries
+CF 165E - Compatible Numbers
+CF 383E - Vowels
+CF 449D - Jzzhu and Numbers
+CF 1208F - Doraemon and Casino
+
+=== Level 5: Linear XOR Basis & Advanced Structures (CF 2000 - 2400+) ===
+CSES 1654 - Maximum Xor Subset
+CSES 2139 - Number of Subset Xors
+CSES 2141 - K Subset Xors
+CF 959F - Mahmoud and Ehab and yet another xor task
+CF 845G - Shortest Path Problem?
+CF 1100F - Ivan and Burgers
+CF 1299D - Around the World
